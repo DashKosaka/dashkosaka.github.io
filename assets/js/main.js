@@ -187,18 +187,6 @@
 				}
 			});
 
-  // Timeline Contents - Add fade-up effect
-  $('.timeline-content')
-    .scrollex({
-      mode: 'middle',
-      top: '-40vh',
-      bottom: '-40vh',
-      initialize: function() {
-        $(this).removeClass('show');
-      },
-      enter: function() {
-        $(this).addClass('show');
-      }
-    });
+
 
 })(jQuery);
