@@ -3907,3 +3907,28 @@ input, select, textarea {
 			}
 
 		}
+
+/* Media */
+.media-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.media-container iframe {
+    position: relative;
+    border: 0; /* Remove border */
+}
+
+
+.media-container img {
+    position: relative;
+    border: 0; /* Remove border */
+}
+
+.media-container p {
+	margin-top: 10px;
+}

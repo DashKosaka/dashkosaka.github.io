@@ -2,38 +2,44 @@
 var timeline_elems = [
     [
         "Coding: Presense's OpenRadar",
-        "",
-        "The first open source mmwave radar processing toolbox."
+        "Oct 2019",
+        "The first open source toolbox for mmWave radar processing and applications.",
+        "oct_2019_openradar.html"
+    ],
+
+    [
+        "Coding: CU Unite",
+        "Sept 2019",
+        "Modern dashboard for monitoring contributions and student involvement of UIUC organizations.",
+        "sept_2019_cu_unite.html"
     ],
 
     [
         "Coding: Deep Fake Farms",
         "",
-        "Robust CV data augmentation for aggricultural datasets using GANs."
+        "Robust CV data augmentation for aggricultural datasets using GANs.",
+        "coming_soon.html"
     ],
 
     [
         "Coding: EIE.IO",
         "",
-        "Automated injury detection system for livestock."
-    ],
-
-    [
-        "Coding: CU Unite",
-        "",
-        "Analytics dashboard for visualizing statistics of all UIUC organizations."
+        "Automated injury detection system for livestock.",
+        "coming_soon.html"
     ],
 
     [
         "Exploring: Japanese & WaniKani",
         "",
-        "Consistently learning Japanese kanji via a spaced repition system."
+        "Consistently learning Japanese kanji via a spaced repition system.",
+        "coming_soon.html"
     ],
 
     [
         "Living: Starting My Bouldering Journey",
         "",
-        "Beginning a membership and learning how to boulder from scratch."
+        "Beginning a membership and learning how to boulder from scratch.",
+        "coming_soon.html"
     ]
 
 ]
@@ -65,15 +71,24 @@ function generateTimeline() {
         // Create the timeline-component div with content
         const content_div = document.createElement('div');
         content_div.className = 'timeline-component timeline-content';
-
+        
         const title = document.createElement('h3');
-        title.textContent = elem[0];
+
+        const blog_link = document.createElement('a');
+        blog_link.href = elem[3];
+        blog_link.textContent = elem[0]
+
+        title.appendChild(blog_link)
+
+        const date = document.createElement('h4');
+        date.textContent = elem[1];
 
         const paragraph = document.createElement('p');
         paragraph.textContent = elem[2];
 
         // Append title and paragraph to content_div
         content_div.appendChild(title);
+        content_div.appendChild(date);
         content_div.appendChild(paragraph);
 
 
@@ -107,8 +122,6 @@ function generateTimeline() {
 
     container.appendChild(empty_div_final);
     container.appendChild(middle_div_final);
-
-    console.log(container.innerHTML);
 
     // Timeline Contents - Add fade-up effect
     $('.timeline-content')
