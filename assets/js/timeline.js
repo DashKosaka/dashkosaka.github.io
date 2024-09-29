@@ -1,47 +1,68 @@
 /// [Title, Date Text, Descirption]
 var timeline_elems = [
     [
+        "Working: System Engineering at Uhnder",
+        "June 2020",
+        "Starting a new chapter in my life working full time on radar algorithm development.",
+        "2020_june_uhnder.html"
+    ],
+
+    [
         "Coding: Presense's OpenRadar",
         "Oct 2019",
         "The first open source toolbox for mmWave radar processing and applications.",
-        "oct_2019_openradar.html"
+        "2019_oct_openradar.html"
     ],
 
     [
         "Coding: CU Unite",
         "Sept 2019",
         "Modern dashboard for monitoring contributions and student involvement of UIUC organizations.",
-        "sept_2019_cu_unite.html"
+        "2019_sept_cu_unite.html"
+    ],
+
+    // [
+    //     "Coding: Deep Fake Farms",
+    //     "",
+    //     "Robust CV data augmentation for aggricultural datasets using GANs.",
+    //     "coming_soon.html"
+    // ],
+
+    // [
+    //     "Coding: EIE.IO",
+    //     "",
+    //     "Automated injury detection system for livestock.",
+    //     "coming_soon.html"
+    // ],
+
+    // [
+    //     "Exploring: Japanese & WaniKani",
+    //     "",
+    //     "Consistently learning Japanese kanji via a spaced repition system.",
+    //     "coming_soon.html"
+    // ],
+
+    // [
+    //     "Living: Starting My Bouldering Journey",
+    //     "",
+    //     "Beginning a membership and learning how to boulder from scratch.",
+    //     "coming_soon.html"
+    // ]
+
+    [
+        "Coding: The SrirachOS Operating System",
+        "May 2018",
+        "A simple CLI operating system with custom functionality.",
+        "2018_may_srirachos.html"
     ],
 
     [
-        "Coding: Deep Fake Farms",
-        "",
-        "Robust CV data augmentation for aggricultural datasets using GANs.",
-        "coming_soon.html"
-    ],
-
-    [
-        "Coding: EIE.IO",
-        "",
-        "Automated injury detection system for livestock.",
-        "coming_soon.html"
-    ],
-
-    [
-        "Exploring: Japanese & WaniKani",
-        "",
-        "Consistently learning Japanese kanji via a spaced repition system.",
-        "coming_soon.html"
-    ],
-
-    [
-        "Living: Starting My Bouldering Journey",
-        "",
-        "Beginning a membership and learning how to boulder from scratch.",
-        "coming_soon.html"
+        "Coding: Colada",
+        "Feb 2018",
+        "A personal bartender and drink creation system using a neural network.",
+        "2018_feb_colada.html"
     ]
-
+    
 ]
 
 function generateTimeline() {
