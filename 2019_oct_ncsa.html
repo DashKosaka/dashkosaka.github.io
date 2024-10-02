@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Dash's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">Dash's Portfolio</a>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+
+				<h1 class="major">Remote Sensing & Machine Learning in Agricultural Analytics</h1>
+				<p><strong>National Center for Supercomputing Applications (NCSA)</strong><br>
+					<strong>University of Illinois at Urbana-Champaign (UIUC)</strong><br>
+				</p>
+				<p>During my October 2019 internship with NCSA as part of UIUC’s Students Pushing Innovation (SPIN)
+					program in, I worked as an academic research intern. I focused on remote sensing and machine
+					learning in the agricultural sector. The research centered on utilizing satellite imagery to monitor
+					agricultural health in the Midwest, with an emphasis on waterlogging detection and geometric
+					correction of satellite imagery. The key goal was to provide scalable, precise data that could aid
+					farmers and analysts in evaluating crop performance and making data-driven decisions.</p>
+
+				<hr>
+
+				<h2>Key Contributions</h2>
+				<ul>
+					<li><strong>Waterlogging Detection</strong>: Developed a Convolutional Neural Network (CNN) to
+						detect waterlogged areas in agricultural land, achieving 95% accuracy.</li>
+					<li><strong>Geometric Correction</strong>: Corrected errors in satellite image calibration with
+						computer vision techniques, improving image accuracy to sub-meter levels.</li>
+					<li><strong>Technology</strong>: Worked extensively with Python, Pytorch, OpenCV, and GIS tools
+						to process large-scale hyperspectral satellite imagery data.</li>
+				</ul>
+
+				<hr>
+
+				<h2>Key Project: Waterlogging Detection in Champaign County</h2>
+				<p>One of my core contributions involved building a deep learning model to detect waterlogged
+					farmland in Champaign County using hyperspectral imagery from the PlanetLab CubeSat. The
+					agricultural sector faces significant challenges when it comes to waterlogging, which negatively
+					impacts crop yields. This project focused on identifying waterlogged areas to assess their
+					effect on agricultural productivity.</p>
+				<ul>
+					<li><strong>Dataset</strong>: Worked with ~250 CubeSat images, approximately 40GB of 3m
+						resolution imagery, manually labeling the waterlogged areas.</li>
+					<li><strong>Model</strong>: Developed a U-Net architecture in Pytorch that achieved 95% accuracy
+						in segmenting waterlogged farmland.</li>
+					<li><strong>Scaling</strong>: Scaled the solution to cover hundreds of counties across Illinois,
+						analyzing hundreds of gigabytes of GIS data.</li>
+				</ul>
+
+				<div class="media-container">
+					<img src="images/ncsa_waterlogging.png" width="800" alt="" data-position="center center" />
+					<p>Waterlogging segmentation using U-Net on CubeSat data</p>
+				</div>
+
+				<hr>
+
+				<h2>Key Project: Geometric Correction on High-Resolution Satellite Imagery</h2>
+				<p>In a second project, I tackled the challenge of geometric correction for high-resolution
+					satellite images. These images, crucial for precision agriculture, often suffer from locational
+					drift and distortion due to imperfect extrinsic calibration. The goal was to correct this drift
+					through advanced computer vision and geospatial techniques.</p>
+				<ul>
+					<li><strong>Challenges</strong>: The system lacked reliable locational accuracy due to
+						calibration drift, causing distortions in GIS-based agricultural data.</li>
+					<li><strong>Solution</strong>: Applied a combination of SIFT and RANSAC computer vision
+						algorithms for feature matching, followed by geospatial transformations to achieve sub-meter
+						accuracy.</li>
+					<li><strong>Impact</strong>: Improved the reliability and accuracy of satellite imagery for
+						precision farming applications requiring exact geographic information.</li>
+				</ul>
+
+
+				<div class="media-container">
+					<img src="images/ncsa_alignment.png" width="800" alt="" data-position="center center" />
+					<p>Pre and post geometric correction of high-resolution GIS data</p>
+				</div>
+
+				<hr>
+
+				<h2>Challenges</h2>
+				<p>One of the most difficult aspects of the internship was dealing with the sheer scale of the data,
+					which often required complex optimizations in both computation and memory handling. The
+					combination of remote sensing techniques and machine learning, though effective, had its hurdles
+					due to noise and variability in satellite data. Additionally, working with multi-channel TIF
+					files for hyperspectral analysis added another layer of complexity in terms of data
+					preprocessing and interpretation.</p>
+
+				<hr>
+
+				<h2>Technologies Used</h2>
+				<ul>
+					<li><strong>Programming</strong>: Python, Pytorch, OpenCV</li>
+					<li><strong>Remote Sensing Tools</strong>: GIS, Sentinel-2, CubeSat</li>
+					<li><strong>Techniques</strong>: Machine Learning, CNNs, SIFT, RANSAC, Geometric Transformations
+					</li>
+					<li><strong>Platforms</strong>: Cloud Computing, GNSS, Git</li>
+				</ul>
+
+
+				<p>This experience laid the foundation for further exploration into the application of remote sensing
+					and AI in agriculture. Both the waterlogging detection and geometric correction projects showcased
+					the potential of modern ML/AI techniques in resolving real-world agricultural challenges.</p>
+
+
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Dash's Portfolio. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

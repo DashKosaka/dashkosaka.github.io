@@ -15,6 +15,13 @@ var timeline_elems = [
     ],
 
     [
+        "Working: Remote Sensing & ML/CV",
+        "Oct 2019",
+        "Fixing large scale problems in an agricultural setting by researching solutions utilizing maching learning and computer vision.",
+        "2019_oct_ncsa.html"
+    ],
+
+    [
         "Coding: CU Unite",
         "Sept 2019",
         "Modern dashboard for monitoring contributions and student involvement of UIUC organizations.",
@@ -62,7 +69,7 @@ var timeline_elems = [
         "A personal bartender and drink creation system using a neural network.",
         "2018_feb_colada.html"
     ]
-    
+
 ]
 
 function generateTimeline() {
@@ -92,7 +99,7 @@ function generateTimeline() {
         // Create the timeline-component div with content
         const content_div = document.createElement('div');
         content_div.className = 'timeline-component timeline-content';
-        
+
         const title = document.createElement('h3');
 
         const blog_link = document.createElement('a');
