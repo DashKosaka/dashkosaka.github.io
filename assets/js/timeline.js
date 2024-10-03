@@ -15,7 +15,7 @@ var timeline_elems = [
     ],
 
     [
-        "Working: Remote Sensing & ML/CV",
+        "Working: Remote Sensing & ML/CV at NCSA",
         "Oct 2019",
         "Fixing large scale problems in an agricultural setting by researching solutions utilizing maching learning and computer vision.",
         "2019_oct_ncsa.html"
@@ -26,6 +26,13 @@ var timeline_elems = [
         "Sept 2019",
         "Modern dashboard for monitoring contributions and student involvement of UIUC organizations.",
         "2019_sept_cu_unite.html"
+    ],
+
+    [
+        "Working: Embedded Systems & Front-End Development at Cohesive Manufacturing",
+        "Sept 2019",
+        "Providing sensor monitoring solutions for critical infrastructure through the cloud.",
+        "2019_sept_cohesive.html"
     ],
 
     // [
