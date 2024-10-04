@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Dash's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">Dash's Portfolio</a>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+
+				<h1 class="major">AlphaSmash: Building a Bot for Super Smash Bros. Ultimate Using Deep Learning</h1>
+
+				<p>
+					In February 2019, AlphaSmash was developed as part of the HackIllinois 2019 hackathon. Inspired by
+					the AI systems <strong>AlphaGo</strong> and <strong>AlphaStar</strong>, we set out to create a bot
+					that could challenge and potentially beat friends in <strong>Super Smash Bros. Ultimate</strong> on
+					the Nintendo Switch. The project combined <strong>deep Q-learning</strong> and <strong>computer
+						vision</strong> to train a reinforcement learning agent capable of playing the game
+					autonomously.
+				</p>
+
+				<hr>
+
+				<h3>Key Contributions</h3>
+				<ul>
+					<li><strong>Developed a bot using Deep Q-learning and computer vision to continuously learn and
+							improve in Super Smash Bros. Ultimate.</strong></li>
+					<li><strong>Designed a custom setup using Arduino, relays, a webcam, and controllers to interact
+							with the Nintendo Switch in real time.</strong></li>
+					<li><strong>Integrated OCR to interpret in-game health percentages, allowing the bot to evaluate its
+							performance and adjust its strategies.</strong></li>
+				</ul>
+
+				<hr>
+
+				<h3>Key Project: AlphaSmash - Learning to Play Super Smash Bros.</h3>
+				<p>The goal of AlphaSmash was simple yet ambitious: train an AI to play Super Smash Bros. Ultimate
+					autonomously and effectively. The inspiration came from advanced AI systems like
+					<strong>AlphaGo</strong> and <strong>AlphaStar</strong>, and we applied similar principles using a
+					mix of hardware and machine learning techniques.
+				</p>
+
+				<h4>Setup</h4>
+				<p>The system consisted of a compute machine, <strong>Arduino Zero</strong>, Nintendo Switch, webcam,
+					controllers, and <strong>mechanical relays</strong>. To reduce costs and latency, we avoided using a
+					capture card and instead relied on a webcam to record the game screen. The webcam feed was then
+					processed by a <strong>CNN + DQN (Deep Q-Network)</strong> model, which identified the current game
+					state.</p>
+
+				<h4>Action Generation & Control</h4>
+				<p>The <strong>CNN</strong> processed visual inputs, while the <strong>DQN</strong> generated an action
+					vector based on the game state. These actions, which corresponded to controller inputs, were
+					physically sent to the Switch using mechanical relays controlled by the Arduino. This bypassed the
+					need to directly hack into the Switch, while still allowing our system to interact with the game.
+				</p>
+
+				<h4>Feedback Loop</h4>
+				<p>In-game health percentages, captured through <strong>OCR</strong>, provided the reinforcement agent
+					with feedback on performance, allowing it to update its Q-values and improve over time.
+					<strong>Transfer learning</strong> was also used to speed up the training process by applying a
+					pre-trained CNN model to interpret visual data more efficiently. The ultimate goal was to train the
+					AI solely against in-game bots, creating an automated training loop for continuous improvement.
+				</p>
+
+				<hr>
+
+				<h3>Challenges</h3>
+				<p>Though the system worked, several challenges arose, particularly balancing hardware and software
+					interactions. The use of mechanical relays to control the Switch introduced some response time
+					limitations, while using a webcam instead of direct video input added noise to the visual data.
+					Additionally, the short timeframe of the hackathon meant we couldn’t fully train the AI model, but
+					early results showed promise, as the bot exhibited basic patterns like moving, attacking, and
+					responding to in-game events.</p>
+
+				<p>Despite the bot occasionally getting stuck in repetitive loops (such as moving to the left platform,
+					attacking, then moving to the right and falling off), these patterns were proof that the system was
+					learning and reacting to the game environment, albeit in an incomplete form.</p>
+
+				<hr>
+
+				<h3>Technologies Used</h3>
+				<ul>
+					<li><strong>Programming</strong>: Python, Pytorch</li>
+					<li><strong>Machine Learning</strong>: CNNs, Deep Q-Learning, Transfer Learning</li>
+					<li><strong>Computer Vision</strong>: OpenCV, OCR</li>
+					<li><strong>Hardware</strong>: Arduino Zero, Mechanical Relays, Nintendo Switch</li>
+					<li><strong>Other</strong>: GitHub, Reinforcement Learning</li>
+				</ul>
+
+				<hr>
+
+				<p>While we didn’t reach a fully trained AI in the time available, <strong>AlphaSmash</strong> was an
+					exciting project that explored the potential of combining hardware and AI for gaming. You can view
+					the progress and code on the <a href="https://github.com/DashKosaka/AlphaSmash"
+						target="_blank">GitHub repository</a>.</p>
+
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Dash's Portfolio. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

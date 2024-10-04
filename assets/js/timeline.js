@@ -1,5 +1,12 @@
 /// [Title, Date Text, Descirption]
 var timeline_elems = [
+    // [
+    //     "Working: Senior System Engineering at Uhnder",
+    //     "Dec 2022",
+    //     "Promotion to Senior System Engineer aiding in interference detection and mitigation.",
+    //     "2020_june_uhnder.html"
+    // ],
+
     [
         "Working: System Engineering at Uhnder",
         "June 2020",
@@ -33,6 +40,13 @@ var timeline_elems = [
         "Sept 2019",
         "Providing sensor monitoring solutions for critical infrastructure through the cloud.",
         "2019_sept_cohesive.html"
+    ],
+
+    [
+        "Coding: AlphaSmash",
+        "Feb 2019",
+        "Reinforcement agent for playing Super Smash Bros. using deep learng.",
+        "2019_feb_alphasmash.html"
     ],
 
     // [
