@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Dash's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">Dash's Portfolio</a>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+
+				<h1 class="major">EIE.io: Smart Farming Using Real-Time Livestock Monitoring</h1>
+
+				<section>
+					<h2>Summary</h2>
+					<p>
+						EIE.io was developed for the AGCO Accelerator 2019 Hackathon, with the goal of helping farmers
+						monitor the well-being of their livestock autonomously. The solution provides real-time alerts
+						for farmers when any livestock shows signs of illness, enabling timely intervention. By
+						leveraging machine learning, we built an end-to-end system that processes images sent from
+						mobile phones or drones, identifies sick animals, and notifies users about where and when to
+						provide assistance.
+					</p>
+				</section>
+
+				<div class="media-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/bBIg6gFloOI"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+					<p>Explaining EIE.io</p>
+				</div>
+
+				<hr>
+
+				<section>
+					<h2>Key Contributions</h2>
+					<ul>
+						<li><strong>Autonomous Livestock Monitoring</strong>: Designed an automated pipeline that
+							detects the health status of livestock using images captured by mobile phones or drones,
+							enhancing farm management and animal welfare.</li>
+						<li><strong>Machine Learning Models</strong>: Trained two dedicated machine learning models —
+							one for object detection to identify the animal in an image, and another for classifying the
+							animal’s health status as healthy or unhealthy. Separate classifiers were trained for each
+							animal type using a custom dataset.</li>
+						<li><strong>Cloud-Based Architecture</strong>: Integrated Google Cloud’s Vision API and Firebase
+							Realtime Database to store and alert farmers about unhealthy animals in real-time without
+							requiring manual refreshes on the application.</li>
+						<li><strong>Web and Mobile App Development</strong>: Developed both the mobile and web
+							applications using the React framework, providing a user-friendly interface for farmers to
+							monitor their livestock in real-time.</li>
+					</ul>
+				</section>
+
+				<hr>
+
+				<section>
+					<h2>Key Projects</h2>
+					<ul>
+						<li><strong>Data Collection and Processing</strong>: Collected and labeled images of eight
+							commonly found farm animals (cow, pig, horse, sheep, goat, donkey, rabbit, and chicken) for
+							training the object detection and classification models.</li>
+						<li><strong>Object Detection and Classification</strong>: Utilized TensorFlow’s Object Detection
+							API for drawing bounding boxes around animals in images and trained classifier models to
+							detect signs of illness in each animal type.</li>
+						<li><strong>Real-Time Alerts and Visualization</strong>: Used Firebase Realtime Database to
+							store unhealthy animal alerts, with real-time updates sent to the web app. Google Maps API
+							was utilized to pinpoint the location of the affected animal on a map, providing visual
+							information to the farmer.</li>
+					</ul>
+				</section>
+
+				<hr>
+
+				<section>
+					<h2>Challenges</h2>
+					<p>
+						One of the main challenges was gathering a large enough dataset of animal images that included
+						various health conditions. We overcame this by focusing on the eight most common farm animals
+						and manually labeling the images for training. Additionally, ensuring real-time updates without
+						compromising performance required the efficient use of cloud services like Firebase and Google
+						Cloud's Vision API.
+					</p>
+				</section>
+
+				<hr>
+
+				<section>
+					<h2>Technologies Used</h2>
+					<ul>
+						<li><strong>Languages & Frameworks</strong>: HTML, Javascript, Python, React, Flask</li>
+						<li><strong>Machine Learning</strong>: TensorFlow, Google Cloud’s Vision API, GCP ML Engine</li>
+						<li><strong>Cloud Services</strong>: Firebase Realtime Database, Google Maps API</li>
+					</ul>
+				</section>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Dash's Portfolio. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

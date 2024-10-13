@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Dash's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">Dash's Portfolio</a>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+
+				<h1 class="major">Building a RISC-V Processor: FPGA Implementation and Optimization</h1>
+
+				<div class="section">
+					<h2>Summary</h2>
+					<p>In December 2018, I participated in a group project where we developed a fully functional
+						<strong>RISC-V processor</strong> from scratch, designed to run on an FPGA. The processor
+						featured a 5-stage pipelined architecture, branch prediction mechanisms, and support for the
+						RV32I instruction set. Our submission achieved a top 5 ranking in a competition focused on
+						optimizing CPU designs for FPGA execution, balancing power and performance.
+					</p>
+				</div>
+
+				<div class="media-container">
+					<img src="images/risc_v_preview.png" width="800" alt="" data-position="center center" />
+					<p>Processor data path</p>
+				</div>
+
+				<hr>
+
+				<div class="section">
+					<h2>Key Contributions</h2>
+					<ul>
+						<li>Owned the CPU architecture design, managing the process from decoding operation opcodes to
+							execution.</li>
+						<li>Successfully pipelined the CPU with a 5-stage design, which significantly boosted throughput
+							while balancing latency through careful dependency analysis.</li>
+						<li>Integrated a Pattern History Table (PHT) to improve branch prediction, reducing
+							misprediction penalties.</li>
+						<li>Tested the design with RISC-V Assembly (ASM) test cases, verifying the correctness of
+							input/output behaviors and per-instruction functionality.</li>
+						<li>Utilized ModelSim for debugging, tracing clock cycle output signals to individual components
+							to correct bugs and ensure accurate execution.</li>
+					</ul>
+				</div>
+
+				<hr>
+
+				<div class="section">
+					<h2>Key Projects</h2>
+					<ul>
+						<li>Developed a fully functional RISC-V processor running on an FPGA with a 5-stage pipeline for
+							increased throughput.</li>
+						<li>Added a branch prediction mechanism using a Pattern History Table (PHT) to further optimize
+							performance.</li>
+						<li>Optimized the processor for both power efficiency and high performance, leading to a top 5
+							finish in the competition.</li>
+					</ul>
+				</div>
+
+				<hr>
+
+				<div class="section">
+					<h2>Challenges</h2>
+					<p>One of the main challenges was implementing the 5-stage pipeline without introducing dependencies
+						that could affect performance. Balancing throughput and latency required detailed analysis of
+						the architecture, and careful handling of hazards between pipeline stages. Debugging the
+						processor using ModelSim to trace issues down to specific components also presented challenges,
+						as any bugs in the CPU design affected clock cycle behavior and output correctness.</p>
+				</div>
+
+				<hr>
+
+				<div class="section">
+					<h2>Technologies Used</h2>
+					<p class="technologies"><strong>SystemVerilog, Quartus, ModelSim, FPGA, RISC-V, Assembly,
+							Git</strong></p>
+				</div>
+
+				<hr>
+
+				<div class="section">
+					<h2>Project Link</h2>
+					<p><a href="https://github.com/DashKosaka/RISC-V" target="_blank">RISC-V GitHub Repository</a></p>
+				</div>
+
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Dash's Portfolio. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

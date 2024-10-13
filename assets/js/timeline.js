@@ -1,11 +1,11 @@
 /// [Title, Date Text, Descirption]
 var timeline_elems = [
-    // [
-    //     "Working: Senior System Engineering at Uhnder",
-    //     "Dec 2022",
-    //     "Promotion to Senior System Engineer aiding in interference detection and mitigation.",
-    //     "2020_june_uhnder.html"
-    // ],
+    [
+        "Working: Senior System Engineering at Uhnder",
+        "Dec 2022",
+        "Promotion to Senior System Engineer aiding in interference detection and mitigation.",
+        "2022_dec_uhnder.html"
+    ],
 
     [
         "Working: System Engineering at Uhnder",
@@ -49,33 +49,40 @@ var timeline_elems = [
         "2019_feb_alphasmash.html"
     ],
 
-    // [
-    //     "Coding: Deep Fake Farms",
-    //     "",
-    //     "Robust CV data augmentation for aggricultural datasets using GANs.",
-    //     "coming_soon.html"
-    // ],
+    [
+        "Coding: Deep Fake Farms",
+        "Feb 2019",
+        "Robust data augmentation for aggricultural image datasets using deep fake technology.",
+        "2019_feb_deep_fake_farms.html"
+    ],
 
-    // [
-    //     "Coding: EIE.IO",
-    //     "",
-    //     "Automated injury detection system for livestock.",
-    //     "coming_soon.html"
-    // ],
+    [
+        "Coding: EIE.io",
+        "Feb 2019",
+        "Smart injury detection system for livestock.",
+        "2019_feb_eieio.html"
+    ],
 
-    // [
-    //     "Exploring: Japanese & WaniKani",
-    //     "",
-    //     "Consistently learning Japanese kanji via a spaced repition system.",
-    //     "coming_soon.html"
-    // ],
+    [
+        "Coding: TyperML",
+        "Dec 2018",
+        "AI based tool for improving typing skill.",
+        "2018_dec_typerml.html"
+    ],
 
-    // [
-    //     "Living: Starting My Bouldering Journey",
-    //     "",
-    //     "Beginning a membership and learning how to boulder from scratch.",
-    //     "coming_soon.html"
-    // ]
+    [
+        "Coding: The RISC-V Architecture",
+        "Dec 2018",
+        "Creating a processor from scratch which supports the RISC-V architecture.",
+        "2018_dec_riscv.html"
+    ],
+
+    [
+        "Coding: PyggyBack",
+        "Sept 2018",
+        "Creating a data platform for planning your trip around campus.",
+        "2018_sept_pyggyback.html"
+    ],
 
     [
         "Coding: The SrirachOS Operating System",

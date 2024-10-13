@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Dash's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">Dash's Portfolio</a>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+
+				<h1 class="major">Deep Fake Farms: Farming the Future With Deep Fake Technology</h1>
+
+				<section>
+					<h2>Summary</h2>
+					<p>
+						Deep Fake Farms was a project developed for the AGCO Accelerator 2019 Hackathon, with the goal
+						of utilizing deep fake technology to generate vast amounts of unique, prelabeled image data for
+						agricultural datasets. Inspired by techniques typically used to mimic human faces, this data
+						augmentation approach helped create synthetic agricultural imagery, offering a scalable solution
+						for training machine learning models in agricultural contexts.
+					</p>
+				</section>
+
+				<div class="media-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/lVzsM4_s83Y"
+						title="YouTube video player" frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowfullscreen></iframe>
+					<p>Explaining Deep Fake Farms</p>
+				</div>
+
+				<hr>
+
+				<section>
+					<h2>Key Contributions</h2>
+					<ul>
+						<li><strong>Data Augmentation for Agriculture</strong>: Designed a novel data augmentation
+							technique that could generate significant volumes of synthetic image data for agricultural
+							land. This was particularly useful for training models on scarce datasets of satellite
+							imagery.</li>
+						<li><strong>Manual Data Curation</strong>: Procured a dataset of satellite images and manually
+							labeled and preprocessed the data using OpenCV. This provided a high-quality training set
+							for the generator/discriminator model.</li>
+						<li><strong>Generative Framework</strong>: Developed a generator/discriminator-based generative
+							adversarial network (GAN) in Pytorch, where a DeCNN was responsible for generating unique
+							agricultural images, and a CNN discriminator inferred which pixels belonged to real farmland
+							on a per-pixel basis.</li>
+						<li><strong>Distributed Data Generation</strong>: Implemented a distributed technique for
+							generating smaller samples of augmented data that could later be merged into larger outputs,
+							providing flexibility in generating images of varying sizes.</li>
+						<li><strong>Transfer Learning for Rapid Prototyping</strong>: Leveraged transfer learning to
+							produce reasonable outputs in less than 24 hours, accelerating the development cycle within
+							the tight time constraints of the hackathon.</li>
+					</ul>
+				</section>
+
+				<hr>
+
+				<section>
+					<h2>Key Projects</h2>
+					<ul>
+						<li><strong>Data Preprocessing</strong>: Used OpenCV for image preprocessing and manual
+							labeling, ensuring that the input data was of high quality for training the GAN framework.
+						</li>
+						<li><strong>GAN Framework</strong>: The GAN consisted of a DeCNN for data generation and a CNN
+							for discrimination, with per-pixel accuracy. This framework could generate synthetic
+							agricultural images with corresponding segmentation labels.</li>
+					</ul>
+				</section>
+
+				<hr>
+
+				<section>
+					<h2>Challenges</h2>
+					<p>
+						One of the primary challenges was generating high-quality data within the tight 24-hour
+						timeframe of the hackathon. This required careful balancing between image resolution, output
+						quality, and the computational constraints. Transfer learning and distributed data generation
+						techniques were critical to achieving the necessary results within the limited time.
+					</p>
+				</section>
+
+				<hr>
+
+				<section>
+					<h2>Technologies Used</h2>
+					<ul>
+						<li><strong>Languages & Libraries</strong>: Python, OpenCV, Pytorch</li>
+						<li><strong>Machine Learning Techniques</strong>: Convolutional Neural Networks (CNN),
+							Deconvolutional Neural Networks (DeCNN), Generative Adversarial Networks (GAN)</li>
+						<li><strong>Tools</strong>: Jupyter Notebook</li>
+						<li><strong>Specializations</strong>: Remote Sensing, Data Augmentation</li>
+					</ul>
+				</section>
+
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Dash's Portfolio. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
