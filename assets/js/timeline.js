@@ -3,7 +3,7 @@ var timeline_elems = [
     [
         "Working: Senior System Engineering at Uhnder",
         "Dec 2022",
-        "Promotion to Senior System Engineer aiding in interference detection and mitigation.",
+        "Promotion to Senior System Engineer, aiding in interference detection and mitigation.",
         "2022_dec_uhnder.html"
     ],
 
@@ -24,7 +24,7 @@ var timeline_elems = [
     [
         "Working: Remote Sensing & ML/CV at NCSA",
         "Oct 2019",
-        "Fixing large scale problems in an agricultural setting by researching solutions utilizing maching learning and computer vision.",
+        "Fixing large scale problems in an agricultural setting by researching solutions utilizing machine learning and computer vision.",
         "2019_oct_ncsa.html"
     ],
 
@@ -45,14 +45,14 @@ var timeline_elems = [
     [
         "Coding: AlphaSmash",
         "Feb 2019",
-        "Reinforcement agent for playing Super Smash Bros. using deep learng.",
+        "Reinforcement agent for playing Super Smash Bros. using deep learning.",
         "2019_feb_alphasmash.html"
     ],
 
     [
         "Coding: Deep Fake Farms",
         "Feb 2019",
-        "Robust data augmentation for aggricultural image datasets using deep fake technology.",
+        "Robust data augmentation for agricultural image datasets using deep fake technology.",
         "2019_feb_deep_fake_farms.html"
     ],
 
@@ -66,7 +66,7 @@ var timeline_elems = [
     [
         "Coding: TyperML",
         "Dec 2018",
-        "AI based tool for improving typing skill.",
+        "AI based tool for improving typing skills.",
         "2018_dec_typerml.html"
     ],
 
