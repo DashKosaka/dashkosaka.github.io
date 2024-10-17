@@ -4,98 +4,98 @@ var timeline_elems = [
         "Working: Senior System Engineering at Uhnder",
         "Dec 2022",
         "Promotion to Senior System Engineer, aiding in interference detection and mitigation.",
-        "2022_dec_uhnder.html"
+        "blog/2022_dec_uhnder.html"
     ],
 
     [
         "Working: System Engineering at Uhnder",
         "June 2020",
         "Starting a new chapter in my life working full time on radar algorithm development.",
-        "2020_june_uhnder.html"
+        "blog/2020_june_uhnder.html"
     ],
 
     [
         "Coding: Presense's OpenRadar",
         "Oct 2019",
         "The first open source toolbox for mmWave radar processing and applications.",
-        "2019_oct_openradar.html"
+        "blog/2019_oct_openradar.html"
     ],
 
     [
         "Working: Remote Sensing & ML/CV at NCSA",
         "Oct 2019",
         "Fixing large scale problems in an agricultural setting by researching solutions utilizing machine learning and computer vision.",
-        "2019_oct_ncsa.html"
+        "blog/2019_oct_ncsa.html"
     ],
 
     [
         "Coding: CU Unite",
         "Sept 2019",
         "Modern dashboard for monitoring contributions and student involvement of UIUC organizations.",
-        "2019_sept_cu_unite.html"
+        "blog/2019_sept_cu_unite.html"
     ],
 
     [
         "Working: Embedded Systems & Front-End Development at Cohesive Manufacturing",
         "Sept 2019",
         "Providing sensor monitoring solutions for critical infrastructure through the cloud.",
-        "2019_sept_cohesive.html"
+        "blog/2019_sept_cohesive.html"
     ],
 
     [
         "Coding: AlphaSmash",
         "Feb 2019",
         "Reinforcement agent for playing Super Smash Bros. using deep learning.",
-        "2019_feb_alphasmash.html"
+        "blog/2019_feb_alphasmash.html"
     ],
 
     [
         "Coding: Deep Fake Farms",
         "Feb 2019",
         "Robust data augmentation for agricultural image datasets using deep fake technology.",
-        "2019_feb_deep_fake_farms.html"
+        "blog/2019_feb_deep_fake_farms.html"
     ],
 
     [
         "Coding: EIE.io",
         "Feb 2019",
         "Smart injury detection system for livestock.",
-        "2019_feb_eieio.html"
+        "blog/2019_feb_eieio.html"
     ],
 
     [
         "Coding: TyperML",
         "Dec 2018",
         "AI based tool for improving typing skills.",
-        "2018_dec_typerml.html"
+        "blog/2018_dec_typerml.html"
     ],
 
     [
         "Coding: The RISC-V Architecture",
         "Dec 2018",
         "Creating a processor from scratch which supports the RISC-V architecture.",
-        "2018_dec_riscv.html"
+        "blog/2018_dec_riscv.html"
     ],
 
     [
         "Coding: PyggyBack",
         "Sept 2018",
         "Creating a data platform for planning your trip around campus.",
-        "2018_sept_pyggyback.html"
+        "blog/2018_sept_pyggyback.html"
     ],
 
     [
         "Coding: The SrirachOS Operating System",
         "May 2018",
         "A simple CLI operating system with custom functionality.",
-        "2018_may_srirachos.html"
+        "blog/2018_may_srirachos.html"
     ],
 
     [
         "Coding: Colada",
         "Feb 2018",
         "A personal bartender and drink creation system using a neural network.",
-        "2018_feb_colada.html"
+        "blog/2018_feb_colada.html"
     ]
 
 ]
