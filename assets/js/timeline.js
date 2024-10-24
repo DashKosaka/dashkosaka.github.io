@@ -11,6 +11,13 @@ class Entry {
 var timeline_elems = [
 
     new Entry(
+        "Living: Getting Into Bouldering",
+        "Jan 2023",
+        "Picking up bouldering as a new hobby.",
+        "blog/2023_jan_bouldering.html"
+    ),
+
+    new Entry(
         "Working: Senior System Engineering at Uhnder",
         "Dec 2022",
         "Promotion to Senior System Engineer, aiding in interference detection and mitigation.",
