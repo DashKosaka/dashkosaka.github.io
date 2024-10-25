@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Dash's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="../index.html" class="title">Dash's Portfolio</a>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+
+				<h1 class="major">Boosting Productivity: tmux</h1>
+
+				<section>
+					<p>When it comes to productivity on a Linux machine, few tools have made as big of an impact on my
+						workflow as tmux. It's a versatile terminal multiplexer that I rely on almost every day. In this
+						post, I want to share three key ways that tmux has transformed how I work: running long and
+						overnight scripts, managing complex tasks across multiple terminals, and keeping my daily work
+						organized.</p>
+				</section>
+
+				<hr>
+
+				<section>
+					<h2>Running Long Scripts with Ease</h2>
+					<p>One of the most common use cases for tmux is running long or indefinite scripts—especially when
+						working remotely. If you've ever ssh'ed into a remote machine and needed to execute a process
+						that takes hours or days to complete, you'll know the challenge: staying connected without
+						interruption. Early on, I faced this issue often, where jobs would terminate if my connection
+						dropped.</p>
+
+					<p>With tmux, however, that problem is solved with a single command. Once you start a tmux session,
+						you can run your script, safely disconnect from the machine, and check back in whenever you
+						need. The server persists even after your terminal closes. I've relied on this countless times,
+						particularly when running tests that capture data over days. It’s impossible to stay connected
+						that long, but tmux ensures that my work continues in the background.</p>
+
+					<p>Some helpful commands:</p>
+					<li>
+						<code>tmux new</code> - Creating a session via tmux server
+					</li>
+					<li>
+						<code>tmux detach</code> or <code>ctrl-b + d</code> - Exit the session while keeping the server
+						running
+					</li>
+					<li>
+						<code>tmux attach</code> - Re-enter the session that was previously created
+					</li>
+					<li>
+						<code>tmux kill-session</code> or <code>tmux kill-server</code> - Kill the tmux session or
+						server
+					</li>
+				</section>
+
+				<hr>
+
+				<section>
+					<h2>Maintaining Workflow Across Sessions</h2>
+					<p>As my usage evolved, tmux became more than just a tool for running scripts. It became central to
+						my daily development process. At work, I regularly ssh into Linux machines, and before tmux, I
+						used to take meticulous notes to remember my place when closing my laptop. But with tmux, I no
+						longer need to worry about that.</p>
+
+					<p>Now, every time I ssh into a machine, I immediately re-enter the tmux session I was working on
+						before. My directories, command history, and environment remain intact. Often, I’ll leave my
+						tmux server running for weeks at a time, allowing me to pick up right where I left off without
+						missing a beat. If I need to work on a side project or run another task, I simply open a new
+						window within the session—no fuss, no need to reorganize.</p>
+
+					<p>Some helpful commands:</p>
+					<li>
+						<code>ctrl-b + :</code> - Enter in a tmux specific command
+					</li>
+					<li>
+						<code>tmux new-window</code> - Create a new window within the session
+					</li>
+					<li>
+						<code>tmux rename-window</code> or <code>tmux rename-session</code> - Rename the current window
+						or session
+					</li>
+					<li>
+						<code>ctrl-b + w</code> - Navigate created sessions and windows
+					</li>
+					<li>
+						<code>ctrl-b + [</code> - Navigate through output history
+					</li>
+				</section>
+
+				<hr>
+
+				<section>
+					<h2>Handling Complex, Multi-Machine Setups</h2>
+					<p>Finally, tmux shines when dealing with more specialized tasks. A particularly useful case I
+						encountered was when using a radar connected to two different machines. I needed to control both
+						machines simultaneously from one terminal. tmux allowed me to ssh into both systems at once and
+						manage communication between them effortlessly.</p>
+
+					<p>Beyond that, tmux’s built-in functionality to synchronize panes, block windows to ensure task
+						execution order, and programmatically manage sessions offers complete control over any complex
+						setup. Whether it’s chaining commands or managing dependencies across machines, tmux makes it
+						all manageable and efficient.</p>
+
+					<p>Some helpful commands:</p>
+					<li>
+						<code>tmux send-keys -t session:window</code> - Send keys or commands to a given window within a
+						session
+					</li>
+					<li>
+						<code>tmux wait-for</code> and <code>tmux wait-for -S</code> - Block and unblock a window from
+						executing any more code until a signal is sent
+					</li>
+				</section>
+
+				<hr>
+
+				<section>
+					<h2>Conclusion</h2>
+					<p>Tmux isn’t just a tool—it’s become an essential part of my workflow. Whether I'm running
+						overnight scripts, maintaining weeks of work across machines, or orchestrating complex tasks
+						involving multiple terminals, tmux keeps me productive. If you haven’t yet explored its full
+						potential, I highly recommend giving it a try. You might be surprised at just how much it can
+						simplify your development process.</p>
+				</section>
+
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Dash's Portfolio. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/jquery.scrolly.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

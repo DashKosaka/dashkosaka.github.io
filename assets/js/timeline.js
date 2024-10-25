@@ -11,6 +11,13 @@ class Entry {
 var timeline_elems = [
 
     new Entry(
+        "Exploring: tmux",
+        "Feb 2023",
+        "Expanding my scripting skills and improving productivity using tmux.",
+        "blog/2023_feb_tmux.html"
+    ),
+
+    new Entry(
         "Living: Getting Into Bouldering",
         "Jan 2023",
         "Picking up bouldering as a new hobby.",
@@ -150,8 +157,8 @@ function generateTimeline() {
             content_div.className += 'category-coding';
         } else if (entry.title.toLowerCase().includes("living")) {
             content_div.className += 'category-living';
-        } else if (entry.title.toLowerCase().includes("learning")) {
-            content_div.className += 'category-learning';
+        } else if (entry.title.toLowerCase().includes("exploring")) {
+            content_div.className += 'category-exploring';
         } else {
             content_div.className += 'category-default';
         }

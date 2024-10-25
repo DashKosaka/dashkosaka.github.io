@@ -88,19 +88,19 @@
   color: #eaeaea
 }
 
-.category-learning {
+.category-exploring {
   background-color: #1b4332;
   -webkit-box-shadow: 0 6px 14px rgba(14, 14, 14, 0.3);
   box-shadow: 0 6px 14px rgba(14, 14, 14, 0.3);
 }
 
-.category-learning h3,
-.category-learning h4 {
+.category-exploring h3,
+.category-exploring h4 {
   color: #e6f7e8;
 
 }
 
-.category-learning p {
+.category-exploring p {
   color: #d8f3dc
 }
 
