@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Dash's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="../index.html" class="title">Dash's Portfolio</a>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<h1 class="major">Getting Started with ROS: A Journey into Robotics Middleware</h1>
+
+				<p>Robot Operating System (ROS) is a tool widely used for data visualization and processing in robotics
+					and beyond. Surprisingly, despite its name, ROS isn’t an operating system but a flexible middleware
+					that connects various robotic components. Here, I'll break down its architecture and what makes it
+					such a versatile platform.</p>
+
+				<hr>
+
+				<h2>ROS Architecture: A Simple Breakdown</h2>
+
+				<p>At a high level, a ROS stack revolves around three key components:</p>
+
+				<h3>1. Launch Files</h3>
+				<p>Launch files sit at the top level and define the parameters for an application, including any
+					relevant ROS nodes needed for it. These files serve as the main entry point, initiating various
+					processes in a controlled manner.</p>
+
+				<h3>2. ROS Nodes</h3>
+				<p>ROS nodes are fundamental to ROS. Each node is an application that can receive inputs, process them,
+					and publish outputs. The term <em>publish</em> is central here—once data is published by a node,
+					it’s available on the ROS server. This setup is powerful because any other node in the network can
+					subscribe to published data, creating a modular system that’s easy to expand and adapt. With nodes
+					designed to work with each other’s outputs, it’s possible to build complex, interdependent systems
+					in a straightforward way.</p>
+
+				<h3>3. ROS Messages</h3>
+				<p>ROS messages define the data types passed between nodes. These messages can represent almost anything
+					necessary for robotic applications—arrays, point clouds, images, and more. And if a custom data
+					structure is needed, ROS allows creating it as long as it can be formatted like a struct. ROS
+					messages come with useful features like timestamps and unique hashes to maintain data versioning and
+					ensure consistency across nodes.</p>
+
+				<hr>
+
+				<h2>The Power of Modularity</h2>
+
+				<p>With these three components, ROS builds a modular system with clear data definitions. New nodes can
+					be added as needed, and the structure remains highly adaptable. Data is stored in a format called
+					ROSbag, a chronologically ordered container that saves all published messages along with their
+					timestamps. This feature means that an entire session’s data capture can be reproduced exactly,
+					which is crucial for testing and benchmarking algorithms in realistic settings.</p>
+
+				<p>One standout feature is the <em>playback</em> capability, allowing ROSbag data to be transmitted as
+					though it’s being captured live. This lets us rigorously test and evaluate new algorithms by
+					replaying real-world data captures.</p>
+
+				<hr>
+
+				<h2>Using ROS in Practice</h2>
+
+				<p>Many of these features play a central role in my current work at Uhnder, where I use ROS to prototype
+					algorithms like occupancy grid maps, trackers, and alignment algorithms. I often start with a
+					lightweight setup in Python, which makes rapid development and adjustments easy. Frequently, I rely
+					on real-world data captured in ROSbags to validate my models and test their effectiveness.</p>
+
+				<p>When developing these algorithms, I also create custom messages tailored to the specific outputs I
+					need to analyze. For instance, I’ve built messages that support point clouds with additional fields
+					and 2D maps, allowing for more detailed insights into the data. Transitioning from prototype to
+					proof of concept is straightforward thanks to ROS's visualization tools, which enable a clear,
+					comprehensive view of how the data behaves.</p>
+
+				<hr>
+
+				<h2>Benefits of a Bilingual Development Environment</h2>
+
+				<p>ROS’s flexibility extends to its support for both C++ and Python for node development. This allows me
+					to quickly build lightweight prototypes in Python that can run independently or integrate seamlessly
+					with the rest of the ROS stack. When speed and performance are critical, transitioning a node to C++
+					is straightforward, giving ROS the flexibility of fast-paced prototyping with the robustness of C++
+					for production-ready applications.</p>
+
+				<hr>
+
+				<h2>Conclusion</h2>
+
+				<p>Learning ROS has been a deep dive into building and connecting modular components. With its simple
+					yet powerful architecture and robust data handling, ROS has become an essential tool in my robotics
+					toolkit. From enabling cross-node communication to offering reliable data playback for testing, ROS
+					has the versatility that makes it invaluable in robotics and autonomous systems.</p>
+
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Dash's Portfolio. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/jquery.scrollex.min.js"></script>
+	<script src="../assets/js/jquery.scrolly.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

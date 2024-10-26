@@ -32,6 +32,13 @@ var timeline_elems = [
     ),
 
     new Entry(
+        "Exploring: ROS",
+        "Sept 2020",
+        "Looking into how ROS enables modular development for robotics and autonomous systems.",
+        "blog/2020_sept_ros.html"
+    ),
+
+    new Entry(
         "Working: System Engineering at Uhnder",
         "June 2020",
         "Starting a new chapter in my life working full time on radar algorithm development.",
@@ -120,6 +127,13 @@ var timeline_elems = [
         "Feb 2018",
         "A personal bartender and drink creation system using a neural network.",
         "blog/2018_feb_colada.html"
+    ),
+
+    new Entry(
+        "Working: 3D Printing Guru at UIUC MakerLab",
+        "Mar 2016",
+        "Helping students perfect their projects using additive manufacturing via 3D printing.",
+        "blog/2016_mar_makerlab.html"
     )
 
 ]
