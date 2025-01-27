@@ -11,6 +11,20 @@ class Entry {
 var timeline_elems = [
 
     new Entry(
+        "Coding: Aniguesser",
+        "Dec 2024",
+        "A bot that challenges you to guess anime from a short music clip",
+        "blog/2024_dec_aniguesser.html"
+    ),
+
+    new Entry(
+        "Exploring: Retrieval-Augmented Generation (RAG)",
+        "Sept 2024",
+        "Expanding the uses of LLM's with external and specialized data via NVIDIA.",
+        "blog/2024_sept_rag.html"
+    ),
+
+    new Entry(
         "Exploring: tmux",
         "Feb 2023",
         "Expanding my scripting skills and improving productivity using tmux.",

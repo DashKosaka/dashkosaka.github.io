@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Dash's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="../index.html" class="title">Dash's Portfolio</a>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+
+				<body>
+					<h1 class="major">Aniguesser Bot</h1>
+
+					<h2>Summary</h2>
+					<p>Aniguesser is a Discord bot I created to challenge users to guess the anime based on short clips
+						of its opening or ending songs. Inspired by the repetitive and predictable nature of YouTube
+						anime music quizzes, the bot dynamically generates unique challenges, offering a seemingly
+						infinite library of song clips for a fresh and engaging experience.</p>
+
+					<h2>Key Features</h2>
+					<ul>
+						<li>Builds a cache of anime metadata by parsing <a href="https://myanimelist.net/"
+								target="_blank">MyAnimeList.net</a> (MAL) using their API.</li>
+						<li>Searches for anime songs based on user-defined parameters such as popularity, release year,
+							or type (openings/endings).</li>
+						<li>Streams randomly selected song clips directly to a Discord voice channel using preprocessed
+							audio.</li>
+						<li>Provides interactive Discord embeds with hints, MAL links, and the correct answer, ensuring
+							an enjoyable user experience.</li>
+					</ul>
+
+					<div class="media-container">
+						<img src="../images/aniguess_end.png" height="500" alt="" data-position="center center" />
+						<p>Extra hints and info along with the audio</p>
+					</div>
+
+					<h2>Challenges</h2>
+					<p>
+						The MAL API's rate limiting posed a significant challenge when building the anime cache, as
+						parsing the entire MAL library took days. To mitigate this, the parser was designed to save
+						progress and avoid redundant work, allowing for efficient updates. Finding accurate audio
+						matches on YouTube also required fine-tuned query handling to ensure the bot provided relevant
+						and high-quality clips.
+					</p>
+
+					<h2>How It Works</h2>
+					<p>
+						The bot begins by initializing a cache of anime metadata, including potential opening and ending
+						themes. When a user issues a command, the bot queries the cache based on parameters like anime
+						rank, popularity, or release year to find a song. It then searches YouTube for a matching audio
+						clip, downloads the closest match, preprocesses it with <strong>FFMPEG</strong>, and streams a
+						short clip to the user’s Discord voice channel.
+					</p>
+					<p>
+						To enhance the experience, a Discord embed is sent alongside the audio, containing hidden
+						information like the anime’s name, MAL page, and hints, which can be revealed at the user’s
+						discretion.
+					</p>
+
+					<h2>Key Achievements</h2>
+					<ul>
+						<li>Automated the generation of unique song-based challenges for anime fans.</li>
+						<li>Optimized the parsing process to handle the massive MAL library efficiently.</li>
+						<li>Streamlined the audio retrieval and streaming process for seamless user interaction.</li>
+					</ul>
+
+					<h2>Technologies Used</h2>
+					<ul>
+						<li><strong>Python</strong> - Core language for implementing the bot and data processing.</li>
+						<li><strong>FFMPEG</strong> - For audio preprocessing and streaming.</li>
+						<li><strong>Discord API</strong> - To integrate the bot with Discord servers and provide a rich
+							interactive experience.</li>
+						<li><strong>Web Crawling</strong> - Used to build and maintain the anime metadata cache from
+							MAL.</li>
+					</ul>
+
+					<h2>Resources</h2>
+					<ul>
+						<li>Check out the project on <a href="https://github.com/DashKosaka/aniguesser"
+								target="_blank">GitHub</a>.</li>
+						<li>Download a pre-parsed cache of anime metadata for quick setup: <a
+								href="https://drive.google.com/file/d/1hJ6RfZP5wrxuKmmyRdxXN8rjUyaLnSf2/view?usp=sharing"
+								target="_blank">Pre-Parsed Cache</a>.</li>
+					</ul>
+
+				</body>
+
+</html>
+
+
+</div>
+</section>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer" class="wrapper alt">
+	<div class="inner">
+		<ul class="menu">
+			<li>&copy; Dash's Portfolio. All rights reserved.</li>
+			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</div>
+</footer>
+
+<!-- Scripts -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery.scrollex.min.js"></script>
+<script src="../assets/js/jquery.scrolly.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Dash's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="../index.html" class="title">Dash's Portfolio</a>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+
+				<body>
+
+					<h1 class="major">RAG Techniques and NVIDIA Developer Courses</h1>
+
+					<h2>Summary</h2>
+					<p>
+						Recently, I completed several courses within NVIDIA’s developer program that focus on large
+						language models (LLMs) and their integration into projects. These courses, including “Building
+						RAG Agents with LLMs” and “Augment your LLM Using Retrieval Augmented Generation,” provide a
+						deep dive into the fundamentals of retrieval-augmented generation (RAG), a technique first
+						introduced by Meta to improve the quality of LLM outputs.
+					</p>
+
+					<h2>Key Topics Covered</h2>
+					<ul>
+						<li>LLM model selection and comparison (e.g., ChatGPT, LLAMA, Gemini, Claude).</li>
+						<li>Prompt creation and chaining workflows using LangChain.</li>
+						<li>Understanding embeddings and summarization techniques for large datasets.</li>
+						<li>Applications of RAG to enhance LLM reliability and reduce hallucinations.</li>
+					</ul>
+
+					<h3>LLM Availability</h3>
+					<p>
+						Nowadays, there are numerous LLM models available to the public, including ChatGPT, LLAMA,
+						Gemini, and Claude, all of which are based on transformer architecture. Some models, such as
+						DeepSeek’s open-source offerings, are optimized and compressed to run efficiently on consumer
+						hardware, significantly lowering the barrier to entry for utilizing this technology. However,
+						not all models deliver the same performance, requiring careful consideration of trade-offs
+						between latency and output quality. For instance, in a test analyzing Japanese-to-English
+						translation accuracy—focusing on grammar and vocabulary—each model provided varying feedback on
+						what was correct or incorrect, even with strict evaluation criteria. These inconsistencies
+						highlight the importance of selecting the right model for specific applications, as they can
+						directly impact the end-user experience.
+					</p>
+
+					<h3>Workflow</h3>
+					<p>
+						During the course, a strong emphasis was placed on prompt creation and chaining workflows to
+						streamline the flow of data in your code. Using LangChain, developers can manage this flow
+						modularly, from input to output. For example, a typical chain might include steps like variable
+						initialization → prompt creation → LLM inference → post-processing. This process functions as
+						the operational backbone for your LLM. By incorporating state into the chain, developers can
+						ensure all intermediate steps are recorded, enabling better debugging and tracking.
+						Additionally, post-processing ensures that the output is always in a usable state. While prompts
+						can be diverse, they must remain specific to the problem at hand. If the chain's state diverges
+						from expectations, the output for the entire workflow risks becoming unreliable.
+					</p>
+
+					<h3>Retrieval-Augmented Generation (RAG)</h3>
+					<p>
+						The most exciting aspect of this technology is Retrieval-Augmented Generation (RAG), which
+						significantly reduces LLM hallucinations by incorporating external data directly into the prompt
+						during inference. For example, if I asked a GPT to summarize what I did yesterday, it wouldn’t
+						have that information because it’s specific, personal, and more recent than the model’s training
+						data. However, if I provided a list like, “I did X, Y, Z,” and then asked the same question, the
+						LLM could use that context to generate a more accurate and reliable response.
+					</p>
+
+					<p>
+						This concept scales to more complex cases, such as summarizing an entire lifetime's worth of
+						information. A naive approach might involve feeding everything I’ve done into the model along
+						with the initial prompt, asking for a one-shot summary. However, this method is impractical due
+						to the limitations of an LLM’s context window, which only allows for small sections of data at a
+						time. Instead, we can break the data into chunks, with each chunk contributing to an iterative
+						summary. In this approach, three key inputs are used per iteration: the current chunk, the
+						running summary, and a prompt to refine and extend the summary.
+					</p>
+
+					<p>
+						To make this process even more powerful, we can integrate an embedding step. Each chunk is
+						stored alongside its embedding, enabling efficient lookups for related information. This allows
+						the LLM to access relevant source material when needed, further enhancing its ability to
+						generate reliable outputs and reducing the risk of hallucination. By iteratively summarizing and
+						leveraging embeddings, RAG creates a dynamic and scalable way to handle large datasets, enabling
+						LLMs to provide accurate results even with extensive or highly specific information.
+					</p>
+
+					<h2>Key Achievements</h2>
+					<ul>
+						<li>Enhanced understanding of LLM integration techniques and challenges.</li>
+						<li>Explored practical applications of RAG to reduce LLM hallucinations.</li>
+						<li>Gained experience with LangChain for modular and stateful data processing.</li>
+						<li>Experimented with embedding techniques for scalable data summarization.</li>
+					</ul>
+
+					<h2>Technologies Used</h2>
+					<ul>
+						<li>Large Language Models (LLMs)</li>
+						<li>Retrieval-Augmented Generation (RAG)</li>
+						<li>Embeddings</li>
+						<li>Python</li>
+						<li>Jupyter</li>
+						<li>LangChain</li>
+					</ul>
+
+					<h2>Resources</h2>
+					<ul>
+						<li>Courses: <a
+								href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-16+V1"
+								target="_blank">Augment your LLM Using Retrieval Augmented Generation</a> and <a
+								href="https://learn.nvidia.com/courses/course-detail?course_id=course-v1:DLI+S-FX-15+V1"
+								target="_blank">Building RAG Agents with LLMs</a></li>
+						<li>DeepSeek V3 Open Source Model: <a href="https://github.com/deepseek-ai/DeepSeek-V3"
+								target="_blank">GitHub Repository</a></li>
+					</ul>
+
+				</body>
+
+</html>
+
+
+</div>
+</section>
+
+</div>
+
+<!-- Footer -->
+<footer id="footer" class="wrapper alt">
+	<div class="inner">
+		<ul class="menu">
+			<li>&copy; Dash's Portfolio. All rights reserved.</li>
+			<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+		</ul>
+	</div>
+</footer>
+
+<!-- Scripts -->
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery.scrollex.min.js"></script>
+<script src="../assets/js/jquery.scrolly.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
